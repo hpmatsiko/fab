@@ -1,0 +1,433 @@
+.ourschools
+{
+	width: calc(100% - 20%);
+	display:flex;
+	justify-content: space-around;
+	padding: 2vh
+}
+
+.insp1
+{
+	display:inline-flex;
+	justify-content: space-around;
+	padding: 5vh 17vh 5vh 17vh;
+}
+.insp11
+{
+	padding-top:1vh;
+	padding-bottom:4vh;
+	line-height: 3vh;
+}
+
+.him
+{
+	width: 90%;
+	height: 50vh;
+	border-radius: 1vh
+}
+.upy
+{
+	padding-left: 20vh;
+	padding-top:7vh;
+}
+
+.upy p
+{
+	font-size: 8vh
+}
+.scm
+{
+	direction: flex;
+	justify-content: space-around;
+	margin-top: 5vh;
+}
+
+.insp3
+{
+	padding: 5vh 25vh 5vh 25vh;
+}
+
+.search-input-caret-jump {
+  position: relative;
+}
+.search-input-caret-jump input {
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  outline: none;
+  transition: border-color 0.3s;
+}
+.search-input-caret-jump button {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: white;
+    color: #838787;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    position: relative; /* Needed for icon positioning */
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #EFF3F2;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.dropdown:hover .fas.fa-chevron-down {
+    transform: rotate(180deg); /* Rotate the icon */
+    transition: transform 0.3s ease; /* Add a smooth transition effect */
+}
+
+
+@media only screen and (max-width: 1200px) {
+  /* For mobile phones: */
+ .insp1{
+ 	display: block;
+ 	padding: 5vh 2vh 5vh 2vh;
+ }
+
+ .him,.scm,.insp3{
+ 	width: calc(100%);
+ }
+.insp3{
+	padding: 5vh 2vh 5vh 2vh;
+}
+
+.upy{
+	padding-left: 0;
+}
+
+#register{
+    display: block;
+}
+}
+
+/*Register form*/
+  @import url('https://fonts.googleapis.com/css?family=Lobster+Two:700|Poppins&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.center{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal-box{
+  top: 40%;
+  opacity: 0;
+  visibility: hidden;
+  background: #FFFCFC;
+  height: auto;
+  width: 120vh;
+  margin-top:40px;
+  padding: 18px 10px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 30px rgba(0,0,0,.2);
+  z-index: 1000;
+}
+
+#register{
+    display:flex;
+    justify-content: space-around;
+}
+
+/*.start-btn.show-modal{
+  opacity: 0;
+  visibility: hidden;
+}*/
+.modal-box.show-modal{
+  top: 50%;
+  opacity: 1;
+  visibility: visible;
+  transition: .4s;
+}
+.modal-box .cr{
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  margin: 10px;
+  color: white;
+  font-size: 18px;
+  border-radius: 100%;
+  text-align: center;
+  cursor: pointer;
+}
+.cr:hover{
+  font-size: 22px;
+  background: #06BBCC;
+}
+.cr{
+  background: #06BBCC;
+}
+
+
+.form_container{
+  background: #FFFCFC;
+  padding: 30px;
+  margin-top: 20px;
+  border-radius: 3px;
+}
+
+.form_container .form_item{
+  margin-bottom: 25px;
+}
+
+.form_container .form_wrap.form_grp{
+  display: flex;
+}
+
+.form_container .form_wrap.form_grp .form_item{
+  width: 50%;
+}
+
+.form_container .form_wrap.form_grp .form_item:first-child{
+  margin-right: 4%;
+}
+
+.form_container .form_item label{
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form_container .form_item input,
+.form_container .form_item select{
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #dadce0;
+  border-radius: 3px;
+}
+ 
+.form_container .btn input[type="submit"]{
+  background: #06BBCC;
+  border: 1px solid #6271f0;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  color: #fff;
+}
+
+@media only screen and (max-width: 760px) {
+  /* For mobile phones: */
+
+#register{
+    display: block;
+}
+
+}
+
+
+@media only screen and (max-width: 1200px) {
+  /* For mobile phones: */
+
+.rgrg{
+    padding-right: 2vh;
+    padding-left: 2vh;
+}
+
+}
+
+@media only screen and (max-width: 991px) {
+  /* For mobile phones: */
+
+.rgrg{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.modal-box{
+    width: calc(100% - 4vh);
+}
+}
+
+
+@media only screen and (max-width: 1200px) {
+  /* For mobile phones: */
+
+.modal-box{
+    width: calc(100% - 4vh);
+}
+}
+
+
+/*Login form*/
+  @import url('https://fonts.googleapis.com/css?family=Lobster+Two:700|Poppins&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.center2{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal-box2{
+  top: 40%;
+  opacity: 0;
+  visibility: hidden;
+  background: #FFFCFC;
+  height: auto;
+  width: 50vh;
+  margin-top:40px;
+  padding: 18px 10px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 30px rgba(0,0,0,.2);
+  z-index: 1000;
+}
+
+#register2{
+    display:block;
+    justify-content: space-around;
+}
+
+/*.start-btn.show-modal{
+  opacity: 0;
+  visibility: hidden;
+}*/
+.modal-box2.show-modal2{
+  top: 50%;
+  opacity: 1;
+  visibility: visible;
+  transition: .4s;
+}
+.modal-box2 .cl{
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  margin: 10px;
+  color: white;
+  font-size: 18px;
+  border-radius: 100%;
+  text-align: center;
+  cursor: pointer;
+}
+.cl:hover{
+  font-size: 22px;
+  background: #06BBCC;
+}
+.cl{
+  background: #06BBCC;
+  font-weight: bold;
+  font-family: arial;
+}
+
+
+.form_container{
+  background: #FFFCFC;
+  padding: 30px;
+  margin-top: 20px;
+  border-radius: 3px;
+}
+
+.form_container .form_item{
+  margin-bottom: 25px;
+}
+
+.form_container .form_wrap.form_grp{
+  display: flex;
+}
+
+.form_container .form_wrap.form_grp .form_item{
+  width: 50%;
+}
+
+.form_container .form_wrap.form_grp .form_item:first-child{
+  margin-right: 4%;
+}
+
+.form_container .form_item label{
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form_container .form_item input,
+.form_container .form_item select{
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #dadce0;
+  border-radius: 3px;
+}
+ 
+.form_container .btn input[type="submit"]{
+  background: #06BBCC;
+  border: 1px solid #6271f0;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  color: #fff;
+}
+
+@media only screen and (max-width: 760px) {
+  /* For mobile phones: */
+
+#register2{
+    display: block;
+}
+
+
+
+.modal-box2{
+    width: calc(100% - 4vh);
+}
+}
+
+
+
+
+
+
